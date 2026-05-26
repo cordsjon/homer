@@ -28,3 +28,6 @@ config.yml
 # Specific Agent file
 CLAUDE.md
 GEMINI.md
+
+# launchd service logs
+.launchd.log
