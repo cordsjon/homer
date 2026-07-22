@@ -3,7 +3,7 @@ schema_version: 1
 app:
   name: "homer"
   owners: ['@cto']
-  repo: "/Users/jcords-macmini/projects/homer"
+  repo: "/Users/jc-folder/projects/homer"
   envs: ['dev']
 about_last_reviewed: "2026-05-18"
 about_review_cadence_days: 60
