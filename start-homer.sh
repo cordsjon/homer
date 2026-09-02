@@ -5,7 +5,7 @@
 # expansion), so the port cannot be substituted there. Fetching it at start
 # time has to happen in a wrapper like this one.
 #
-# portmgr (http://127.0.0.1:9000) is the single source of truth for port
+# portmgr (http://100.92.111.112:9000) is the single source of truth for port
 # assignments across the workspace — never hardcode a port here. The fallback
 # below exists only so a portmgr outage degrades to "homer still serves on its
 # last known port" instead of "homer is down"; it is not a second source of
@@ -14,7 +14,7 @@ set -euo pipefail
 
 cd /Users/jcords-macmini/projects-local/homer
 
-PORTMGR_URL="${PORTMGR_URL:-http://127.0.0.1:9000}"
+PORTMGR_URL="${PORTMGR_URL:-http://100.92.111.112:9000}"
 FALLBACK_PORT=9102
 
 PORT=$(curl -s --max-time 5 "${PORTMGR_URL}/allocations" 2>/dev/null \
